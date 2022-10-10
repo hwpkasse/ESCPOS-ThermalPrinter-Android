@@ -485,11 +485,6 @@ public class EscPosPrinterCommands {
                 this.currentTextBold = textBold;
             }
 
-            if (!Arrays.equals(this.currentTextColor, textColor)) {
-                this.printerConnection.write(textColor);
-                this.currentTextColor = textColor;
-            }
-
             if (!Arrays.equals(this.currentTextReverseColor, textReverseColor)) {
                 this.printerConnection.write(textReverseColor);
                 this.currentTextReverseColor = textReverseColor;
